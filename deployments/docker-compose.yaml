@@ -1,0 +1,13 @@
+services:
+  gomedo:
+    build:
+      context: ../
+      dockerfile: build/docker/go/Dockerfile
+    image: gomdeo
+    restart: unless-stopped
+    environment:
+      UNIQUE_IDENTIFIER: ${UNIQUE_IDENTIFIER}
+      SCRAPE_ENDPOINT: ${SCRAPE_ENDPOINT}
+      SCRAPE_INTERVAL: ${SCRAPE_INTERVAL}
+      APPOINTMENT_KEYWORDS: ${APPOINTMENT_KEYWORDS}
+      NOTIFICATION_HOOKS: ${NOTIFICATION_HOOKS}
