@@ -17,7 +17,7 @@ type Config struct {
 
 var C = &Config{}
 
-func init()  {
+func init() {
 	C.UniqueID = os.Getenv("UNIQUE_IDENTIFIER")
 	C.Endpoint = os.Getenv("SCRAPE_ENDPOINT")
 	C.Interval, _ = time.ParseDuration(os.Getenv("SCRAPE_INTERVAL"))
@@ -34,7 +34,7 @@ func (c *Config) Valid() bool {
 
 	valid = valid && !(c.UniqueID == "")
 	valid = valid && !(c.Endpoint == "")
-	valid = valid && !(c.Interval == 0 * time.Second)
+	valid = valid && !(c.Interval == 0*time.Second)
 
 	if len(c.Keywords) == 0 {
 		log.Println("no appointment keywords set")
