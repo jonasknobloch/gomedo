@@ -1,5 +1,7 @@
 # Gomedo
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/jonasknobloch/gomedo)](https://goreportcard.com/report/github.com/jonasknobloch/gomedo)
+
 Gomedo allows for easy monitoring of a [tomedo](https://tomedo.de) medical appointment calendar.
 
 *This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with
