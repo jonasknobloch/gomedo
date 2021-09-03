@@ -9,8 +9,8 @@ zollsoft GmbH or any of its subsidiaries or its affiliates.*
 
 ## Usage
 
-Using the provided [docker-compose configuration](deployments/docker-compose.yaml) is probably the fastest way to get started.
-Running the binary directly works just as well, provided all required environment variables are set correctly.
+Using the [docker-compose configuration](deployments/docker-compose.yaml) is probably the fastest way to get started.
+Directly running the binary works just as well, provided all required environment variables are set.
 See the [Dockerfile](build/docker/go/Dockerfile) for detailed build instructions.
 
 ### docker-compose
